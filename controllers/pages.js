@@ -15,29 +15,3 @@ exports.login = {
 //    reply.file('./src/login.html');
   }
 }
-
-exports.getAll = {
-    handler(request, reply) {
-        User.find({}, (err, user) => {
-            if (!err) {
-                reply(user);
-            } else {
-                reply(Boom.badImplementation(err)); // 500 error
-            }
-        });
-    }
-};
-
-exports.getOne = {
-    handler(request, reply) {
-        User.findOne({
-            'username': request.params.username
-        }, (err, user) => {
-            if (!err) {
-                reply(user);
-            } else {
-                reply(Boom.badImplementation(err)); // 500 error
-            }
-        });
-    }
-};
