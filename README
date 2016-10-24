@@ -1,1 +1,19 @@
-toto
+POST    /login                      OK
+DELETE  /logout                     OK
+POST    /register                   OK
+
+GET     /user                       OK
+GET     /user/{username}            OK
+POST    /user                       OK
+PUT     /user/{username}            OK
+DELETE  /user/{username}            OK
+POST    /user/me                    OK
+GET     /user/item                  OK
+PUT     /user/item/{item}           OK
+DELETE  /user/item/{item}           OK
+
+GET     /stock                      OK
+GET     /stock/{item}               OK
+POST    /stock                      OK
+PUT     /stock/{item}               OK
+DELETE  /stock/{item}               OK

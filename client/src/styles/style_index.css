@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('../police/bebas/bebasneue-webfont.woff2') format('woff2'),
+         url('../police/bebas/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url('../police/lobster_1.4-webfont.woff2') format('woff2'),
+         url('../police/lobster_1.4-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  position: absolute;
+  z-index: 1;
+  background-image: url('../../img/font.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#banner {
+  position: fixed;
+  z-index: 2;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 100%;
+  padding-bottom: 20px;
+  font-family: 'lobster';
+  color: #DAF0F5;
+  background-color: #2C3E50;
+}
+
+.toolbar {
+  top: 3%;
+  position: fixed;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.toolbar:hover {
+  top: 9.5%;
+}
+
+.gear {
+  z-index: 3;
+  top: 10%;
+  position: fixed;
+  right:-4.5%;
+  transition: 0.5s;
+}
+
+.gear:hover {
+  right:-2%;
+}
