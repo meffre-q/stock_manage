@@ -1,3 +1,12 @@
+DESCRIPTION :
+Little API to discover Node.JS
+
+USE:
+- Node.JS
+- HAPI JS (Node.JS framework)
+- MongoDB (NoSQL Database)
+
+API:
 POST    /login                      OK
 DELETE  /logout                     OK
 POST    /register                   OK
